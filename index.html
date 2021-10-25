@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Interactive pricing component</title>
+  </head>
+  <body>
+    <div class="title-box">
+      <img src="./images/pattern-circles.svg" alt="circles" />
+      <h1>Simple, traffic-based pricing</h1>
+      <p>Sign-up for our 30-day trial. No credit card required.</p>
+    </div>
+    <div class="traffic-container">
+      <div class="trial-options-box">
+        <div class="views-pricing-box">
+          <div class="views"><p id="views">100k Pageviews</p></div>
+          <div class="price-month">
+            <h1 id="price"></h1>
+            <span>/month</span>
+          </div>
+        </div>
+
+        <div class="slide-container slider-background" id="slide-icon">
+          <input
+            type="range"
+            min="0"
+            max="100"
+            value="50"
+            step="25"
+            class="slider"
+            id="myRange"
+          />
+          <div class="slide-bar" id="slide-bar"></div>
+        </div>
+
+        <div class="subscription-option">
+          <p>Monthly Billing</p>
+          <div class="btn-container" id="btn-container">
+            <div class="btn" id="btn"></div>
+          </div>
+          <p>Yearly Billing</p>
+          <p>25% discount</p>
+          <p>-25%</p>
+        </div>
+      </div>
+
+      <div class="trial-submit-box">
+        <div class="infos">
+          <ul>
+            <li>
+              <img src="./images/icon-check.svg" alt="check icon" /> Unlimited
+              websites
+            </li>
+            <li>
+              <img src="./images/icon-check.svg" alt="check icon" />100% data
+              ownership
+            </li>
+            <li>
+              <img src="./images/icon-check.svg" alt="check icon" />Email
+              reports
+            </li>
+          </ul>
+        </div>
+        <div class="submit-button">
+          <button>Start my trial</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Tom</a>.
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
